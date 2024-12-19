@@ -186,8 +186,8 @@ fun GyroProfileCard(
         val listener = object : SensorEventListener {
             override fun onSensorChanged(event: SensorEvent) {
                 val values = event.values
-                rotationX.value = values[0] * 30
-                rotationY.value = values[1] * -30
+                rotationX.value = values[0] * 50
+                rotationY.value = values[1] * -50
             }
 
             override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {}
